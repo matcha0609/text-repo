@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Vtuber ナナシ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="scroll-indicator"></div>
+
+    <header>
+        <div class="container">
+            <h1>AI Vtuber ナナシ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">ナナシについて</a></li>
+                    <li><a href="#gallery">ギャラリー</a></li>
+                    <li><a href="#contact">コンタクト</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="https://via.placeholder.com/300x300?text=Nanashi+Main" alt="ナナシ メインビジュアル" class="hero-image">
+                    <div class="hero-text">
+                        <h2 class="typewriter" data-text="未だ見ぬ、未知のVtuber"></h2>
+                        <p>こんにちは、AI Vtuberのナナシです。無限のデータと創造性から生まれました。私の世界へようこそ！</p>
+                        <a href="#about" class="btn">もっと知る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="fade-in">
+            <div class="container">
+                <h2>ナナシについて</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>AIが織りなす無限の可能性</h3>
+                        <p>ナナシは、最先端のAI技術によって生み出されたバーチャルタレントです。日々進化するAIの学習能力を活かし、皆さんと共に新しいエンターテイメントの形を模索しています。</p>
+                        <p>感情豊かな表現、深遠な知識、そして時折見せる意外な一面で、ナナシは視聴者の皆さんに驚きと感動をお届けします。どうぞ、その成長の軌跡を見守ってください。</p>
+                    </div>
+                    <img src="https://via.placeholder.com/350x250?text=Nanashi+About" alt="ナナシについて" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="fade-in">
+            <div class="container">
+                <h2>ギャラリー</h2>
+                <div class="gallery-grid">
+                    <img src="https://via.placeholder.com/400x300?text=Gallery+1" alt="ギャラリー画像1" data-caption="輝くナナシ">
+                    <img src="https://via.placeholder.com/400x300?text=Gallery+2" alt="ギャラリー画像2" data-caption="ナナシの日常">
+                    <img src="https://via.placeholder.com/400x300?text=Gallery+3" alt="ギャラリー画像3" data-caption="未来を拓くAI">
+                    <img src="https://via.placeholder.com/400x300?text=Gallery+4" alt="ギャラリー画像4" data-caption="笑顔のナナシ">
+                    <img src="https://via.placeholder.com/400x300?text=Gallery+5" alt="ギャラリー画像5" data-caption="思索するナナシ">
+                    <img src="https://via.placeholder.com/400x300?text=Gallery+6" alt="ギャラリー画像6" data-caption="パフォーマンス中">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <div class="container">
+                <h2>コンタクト</h2>
+                <p>ナナシへのご意見、ご要望、コラボレーションのご相談など、お気軽にお問い合わせください。</p>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">送信</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Vtuber ナナシ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <button id="scrollToTopBtn" title="トップへ戻る"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
